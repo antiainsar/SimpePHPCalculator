@@ -7,6 +7,10 @@ class CalculatorTest extends \PHPUnit\Framework\TestCase {
 
         $result = $calculator->add(20,5);
         $this->assertEquals(25, $result);
+        $result_error = $calculator->add("ei ole number",5);
+        $this->assertEquals("Argumendid peavad numbrid olema liitmisel", $result_error);
+        
+
 
     }
     
